@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline'">
+    <title>Hello World!</title>
+    <style>
+      html { font-family: sans-serif; background: #2B2E3B; color: #9FEAF9; }
+    </style>
+  </head>
+  <!-- For dragging the window by body -->
+  <!-- <body style="-webkit-user-select: none; -webkit-app-region: drag;"> -->
+  <body>
+    <!-- <video src="./mgm.mp4" controls widht="650"></video> -->
+    
+    <!-- <img src="https:placekitten.com/500/500">Kitten</img> -->
+    <!-- <a target="_blank" href="https://www.github.com">github</a> -->
+    <h1>Hello Electron!</h1>
+    <p>Build cross-platform desktop apps with JavaScript, HTML, and CSS</p>
+
+    <h2><a href="http://ipu.ac.in/univsyllabus/btechsyllabus010813/1Final%20B.Tech%201st%20year%20scheme%20and%20syllabus/1Final%20Scheme%20&%20Syllabus-%20Ist%20&%202nd%20Semester%20for%20the%20academic%20session%202014-15.pdf" download>Download PDF</a></h2>
+    <progress class="progess"  value="0" max="100" id="progress"></progress>
+
+    <script>
+      window.progress = document.getElementById('progress')
+      // You can also require other files to run in this process
+      require('./renderer.js')
+    </script>
+  </body>
+</html>
